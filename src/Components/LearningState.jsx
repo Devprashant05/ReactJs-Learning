@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 function LearningState() {
-    const [val, setVal] = useState({ name: 'Prashant', isbanned: false });
+    const [val, setVal] = useState({ name: 'Prashant', isbanned: false })
     return (
         <div className='p-5'>
-            <h1 className='text-lg'>{val.name}</h1>
-            <h1 className='text-lg'>{val.isbanned.toString()}</h1>
+            <h1>{val.name}</h1>
+            <h2>{val.isbanned.toString()}</h2>
             <button onClick={
                 () => setVal({ ...val, isbanned: !val.isbanned })
             }
