@@ -9,7 +9,7 @@ function LearningState() {
             <button onClick={
                 () => setVal({ ...val, isbanned: !val.isbanned })
             }
-                className='px-2 py-1 bg-blue-600 text-white rounded mt-4'>Change</button>
+                className={`px-2 py-1 ${val.isbanned ? "bg-blue-500" : "bg-red-500"} text-md text-white rounded mt-4`}>Change</button>
         </div>
     )
 }
